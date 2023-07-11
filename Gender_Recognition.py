@@ -101,7 +101,7 @@ model_g.summary()
 
 # compile the model
 model_g.compile(loss="binary_crossentropy", optimizer = Adam(lr=0.001), metrics=["accuracy"])
-checkpoint = ModelCheckpoint("./model.h5", monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+checkpoint = ModelCheckpoint("./models/Gender_CNN_model.model", monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 early_stopping = EarlyStopping(monitor='val_loss',min_delta=0, patience=3, verbose=1, restore_best_weights=True)
 reduce_learningrate = ReduceLROnPlateau(monitor='val_loss',factor=0.2, patience=3, verbose=1, min_delta=0.0001)
 callbacks_list = [early_stopping,checkpoint,reduce_learningrate]
@@ -161,7 +161,7 @@ resnet_model.summary()
 
 # compile the model
 resnet_model.compile(optimizer = Adam(lr=0.001), loss='binary_crossentropy',metrics=['accuracy'])
-checkpoint = ModelCheckpoint("./model.h5", monitor='val_acc', verbose=1, save_best_only=True, mode='max')
+checkpoint = ModelCheckpoint("./models/Gender_ResNet50_model.model", monitor='val_acc', verbose=1, save_best_only=True, mode='max')
 early_stopping = EarlyStopping(monitor='val_loss',min_delta=0, patience=3, verbose=1, restore_best_weights=True)
 reduce_learningrate = ReduceLROnPlateau(monitor='val_loss',factor=0.2, patience=3, verbose=1, min_delta=0.0001)
 callbacks_list = [early_stopping,checkpoint,reduce_learningrate]
