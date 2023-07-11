@@ -11,7 +11,7 @@ import numpy as np
 
 # load models
 face_classifier = cv2.CascadeClassifier('models/haarcascade_frontalface_default.xml')
-gender_model = load_model('./models/Gender_ResNet50_model.h5')
+gender_model = load_model('./models/Gender_CNN_model.model')
 emotion_model = load_model('./models/FER_CNN_model.h5')
 
 
