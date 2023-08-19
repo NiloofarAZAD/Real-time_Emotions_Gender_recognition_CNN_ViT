@@ -1,4 +1,4 @@
-# Gender recognition using CNN & ResNet50 (Transfer learning) 2021
+# Gender recognition using CNN & ResNet50 (Transfer learning)
 
 
 # import libraries

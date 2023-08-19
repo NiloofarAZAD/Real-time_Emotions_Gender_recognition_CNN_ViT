@@ -1,4 +1,4 @@
-# Real-time Gender & Emotion recognition 2021
+# Real-time Gender & Emotion recognition
 
 
 # import libraries
