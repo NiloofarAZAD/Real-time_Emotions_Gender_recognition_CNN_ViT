@@ -1,4 +1,4 @@
-# Face Emotions recognition using CNN 2021
+# Face Emotions recognition using CNN
 # Dataset : Fer 2013
 
 
