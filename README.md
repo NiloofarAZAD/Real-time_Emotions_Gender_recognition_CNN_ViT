@@ -1,4 +1,4 @@
-# Real-time_face_Emotions_Gender_recognition_CNN
-Real-time face Emotions and Gender recognition using Convolutional Neural Network (CNN)
+# Real-time Facial Expression and Gender Recognition Using CNNs and Vision Transformers
+A comparison of CNNs and Vision Transformers in image classification for a real-time facial expression and gender recognition system
 
 ⚡ Facial Expressions Dateset: https://www.kaggle.com/datasets/msambare/fer2013
